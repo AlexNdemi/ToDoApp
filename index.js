@@ -119,11 +119,12 @@ function render(){
         editButton.textContent = "edit";
         editButton.setAttribute('id',Task.id);
         editButton.onclick = editButtonClickHandler;
-        editButton.classList.add("edit-button")
+        editButton.classList.add("edit-button");
         let deleteButton= document.createElement('button');
         deleteButton.textContent='delete';
         deleteButton.setAttribute('id',Task.id);
         deleteButton.onclick=deleteButtonClickHandler;
+        deleteButton.classList.add("delete-button");
         buttonsDiv.appendChild(editButton);
         buttonsDiv.appendChild(deleteButton);
         element.appendChild(buttonsDiv);

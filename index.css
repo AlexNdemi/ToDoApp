@@ -210,30 +210,42 @@
   button{
     padding:0.5rem 1rem;
     border-radius: 100vw;
-    border: transparent;
+    border: 1px solid var(--clr-accent-400);
     transition: background 250ms ease-in-out;
     background-color: var(--clr-accent-100);
-    color:white;
+    /* background-color: var(--clr-accent-100); */
+    color:var(--clr-primary-300);
     font-weight: var(--fw-bold);
   }
   button:not([disabled]){
     cursor:pointer
    }
   .edit-button{
-    background-color: transparent;
-    color:var(--clr-primary-300);
-    border:1px solid hsl(0, 0%, 40%);
     margin-inline-end: 1em;
   }
+  /* .edit-button:hover{
+    background-color:var(--clr-accent-400)!important;
+  } */
   button:not([disabled]):hover{
-    background-color: var(--clr-accent-400);
+    background-color:var(--clr-accent-400)
+    
+  }
+  .delete-button{
+    color:var(--clr-accent-100);
+    background: transparent;
+    border:1px solid hsl(0, 0%, 40%);
+    
+  }
+  .delete-button:hover{
+    color:hsl(0, 100%, 60%);
+    border:1px solid hsl(0, 100%, 60%);
+    background-color: transparent!important;
+    font-weight: 700;
   }
   button[disabled]{
     opacity:0.5;
     pointer-events: none;
-  }
-  .edit-button:hover{
-    background-color: hsl(0 0% 13%)!important;
+    background-color: var(--clr-accent-100);
   }
   .task-div{
     margin-block:1em;
